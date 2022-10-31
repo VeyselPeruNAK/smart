@@ -8,8 +8,8 @@ namespace Ders2_Operators
         {
             //İşlem Önceliği
 
-            // * / önceliklidir. Eşit önceliklidir. Eşit önceliklilerde işlemler soldan sağa yapılır.
-            // + - operatörleri sonra gelir. İkisi eşit önceliklidir.
+            //// * / önceliklidir. Eşit önceliklidir. Eşit önceliklilerde işlemler soldan sağa yapılır.
+            //// + - operatörleri sonra gelir. İkisi eşit önceliklidir.
 
             int a, b, c, d, sonuc1, sonuc2, sonuc3, toplam;
             a = 5;
