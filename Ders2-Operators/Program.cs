@@ -12,12 +12,13 @@ namespace Ders2_Operators
             //// + - operatörleri sonra gelir. İkisi eşit önceliklidir.
 
             int a, b, c, d, sonuc1, sonuc2, sonuc3, toplam;
-            a = 5;
+            a = 50;
             b = 11;
             c = 20;
             d = 30;
             sonuc1 = a * b / c + d;
-            Console.WriteLine($"sonuc1 = {sonuc1}");
+            sonuc2 = a * b / (c + d);
+            Console.WriteLine($"sonuc1 = {sonuc1}, sonuc2 = {sonuc2}");
             Console.ReadLine();
 
             float fa, fb, fc, fd, fsonuc1, fsonuc2, fsonuc3, ftoplam;
