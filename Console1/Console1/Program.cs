@@ -17,6 +17,7 @@ namespace Console1
                 Console.WriteLine("Sayı Negatif");
             else
                 Console.WriteLine("Sayı Pozitif");
+
             //Console.WriteLine("Program sona erdi.");
             //Console.ReadLine();
         }

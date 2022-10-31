@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\veyse\\source\\repos\\Sabah101\\Console1\\Console1\\Console1.csproj": {}
+    "C:\\Users\\veyse\\source\\repos\\smart\\Console1\\Console1\\Console1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\veyse\\source\\repos\\Sabah101\\Console1\\Console1\\Console1.csproj": {
+    "C:\\Users\\veyse\\source\\repos\\smart\\Console1\\Console1\\Console1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\veyse\\source\\repos\\Sabah101\\Console1\\Console1\\Console1.csproj",
+        "projectUniqueName": "C:\\Users\\veyse\\source\\repos\\smart\\Console1\\Console1\\Console1.csproj",
         "projectName": "Console1",
-        "projectPath": "C:\\Users\\veyse\\source\\repos\\Sabah101\\Console1\\Console1\\Console1.csproj",
+        "projectPath": "C:\\Users\\veyse\\source\\repos\\smart\\Console1\\Console1\\Console1.csproj",
         "packagesPath": "C:\\Users\\veyse\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\veyse\\source\\repos\\Sabah101\\Console1\\Console1\\obj\\",
+        "outputPath": "C:\\Users\\veyse\\source\\repos\\smart\\Console1\\Console1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\veyse\\AppData\\Roaming\\NuGet\\NuGet.Config",
