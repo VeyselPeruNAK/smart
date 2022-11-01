@@ -107,14 +107,15 @@ namespace Ders2_Operators
             //bool esitDegilMi = 45.33F != 66.7F; // True
             //bool buyukEsitMi = 45 >= 45; // True
             //bool kucukEsitMi = 55 <= 45; // False
-            ////Console.WriteLine(buyukMu + "  " + kucukMu + "  " + esitMi + "  " + esitDegilMi);
+            ////Console.WriteLine(buyukMu + "," + kucukMu + ",  " + esitMi + ",  " + esitDegilMi);
             ///
 
 
             //// as is operatörleri
 
-            //object obj = "Veysel Perü";
-            //string yazi = obj as string; // string e dönüştürerek ata.
+            object obj = "Veysel Perü";
+            string yazi = (string)obj; // string e dönüştürerek ata.
+            yazi = obj as string;
 
             //bool stringMi = yazi is string; // True
             //bool intMi = yazi is int; // False
@@ -158,14 +159,14 @@ namespace Ders2_Operators
             // Bitsel Operatörler
 
             //// Bitsel Ve,Veya,... operatörü
-            //byte bSayi = 5; //0101
-            //byte iSayi = 3; //0011
+            byte bSayi = 5; //0101
+            byte iSayi = 3; //0011
             //int kont7 = bSayi & iSayi;        // =>    0001
             //int kont8 = bSayi | iSayi;        // =>    0111
-            //byte kont9 = (byte)~iSayi;
+            byte kont9 = (byte)~iSayi;
             //Console.WriteLine(kont7);
             //Console.WriteLine(kont8);
-            //Console.WriteLine(kont9);
+            Console.WriteLine("kont9=" + kont9);
 
             //0101   =5
             //0011   =3
@@ -177,11 +178,11 @@ namespace Ders2_Operators
             //11111100 //252
             //0110
 
-            //int iSayi = 5;    
-            //byte bSayi = (byte)~iSayi;   // 255 -5 ; 1'den çıkarır bitleri.
-            //Console.WriteLine(iSayi);
-            //Console.WriteLine(bSayi);
-
+            iSayi = 5;
+            bSayi = (byte)~iSayi;   // 255 -5 ; 1'den çıkarır bitleri.
+            Console.WriteLine(iSayi);
+            Console.WriteLine(bSayi);
+            Console.ReadKey();
 
 
 
