@@ -6,7 +6,7 @@ namespace Ders3_IF_ELSE_IF_ELSE
     {
         private static void Main(string[] args)
         {
-            // Burası -2
+            // 
             //bool kosul = true;
             //if (kosul==true)
             //{
@@ -123,32 +123,17 @@ namespace Ders3_IF_ELSE_IF_ELSE
             // (islem => topla,cikar,carp,bol )
             // İşleme göre girilen değerleri işleme sokan prog.
 
-            //Console.Write("sayi1: ");
-            //float sayi1 = float.Parse(Console.ReadLine());
+            Console.Write("sayi1: ");
+            float sayi1 = float.Parse(Console.ReadLine());
 
-            //Console.Write("sayi2: ");
-            //float sayi2 = Convert.ToSingle(Console.ReadLine());
+            Console.Write("sayi2: ");
+            float sayi2 = Convert.ToSingle(Console.ReadLine());
 
-            //Console.Write("islem: ");
-            //string islem = Console.ReadLine(); // string olduğu için değiştirmedik.
+            Console.Write("islem: ");
+            string islem = Console.ReadLine(); // string olduğu için değiştirmedik.
 
-            // //   sayi2 0 olursa bölmede hata alırız. !!!
+            //   sayi2 0 olursa bölmede hata alırız. !!!
 
-            //if(islem=="topla")
-            //{
-            //    Console.WriteLine(sayi1+sayi2);
-            //}
-            //else if(islem=="cikar")
-            //    Console.WriteLine(sayi1-sayi2);
-            //else if(islem=="carp")
-            //    Console.WriteLine((sayi1*sayi2));
-            //else if(islem=="bol")
-            //    Console.WriteLine(sayi1/sayi2);
-            //else
-            //    Console.WriteLine("Hatalı islem girdiniz.!!!");
-
-
-            //// Bölme seçildiğinde 2. sayının olmadığından emin ol.
             //if (islem == "topla")
             //{
             //    Console.WriteLine(sayi1 + sayi2);
@@ -158,16 +143,31 @@ namespace Ders3_IF_ELSE_IF_ELSE
             //else if (islem == "carp")
             //    Console.WriteLine((sayi1 * sayi2));
             //else if (islem == "bol")
-            //    if(sayi2==0)
-            //    {
-            //        Console.WriteLine("0'a bölme yapılamaz!!!");
-            //    }
-            //    else
-            //    {
-            //        Console.WriteLine(sayi1 / sayi2);
-            //    }
+            //    Console.WriteLine(sayi1 / sayi2);
             //else
             //    Console.WriteLine("Hatalı islem girdiniz.!!!");
+
+
+            // Bölme seçildiğinde 2. sayının olmadığından emin ol.
+            if (islem == "topla")
+            {
+                Console.WriteLine(sayi1 + sayi2);
+            }
+            else if (islem == "cikar")
+                Console.WriteLine(sayi1 - sayi2);
+            else if (islem == "carp")
+                Console.WriteLine((sayi1 * sayi2));
+            else if (islem == "bol")
+                if (sayi2 == 0)
+                {
+                    Console.WriteLine("0'a bölme yapılamaz!!!");
+                }
+                else
+                {
+                    Console.WriteLine(sayi1 / sayi2);
+                }
+            else
+                Console.WriteLine("Hatalı islem girdiniz.!!!");
 
 
             //Klavyeden girilen sayı
@@ -270,12 +270,12 @@ namespace Ders3_IF_ELSE_IF_ELSE
 
             // Burası -1
             //// rakamları ekrana yazdıran program.
-            int rakam = 0;
-        Etiket: //label
-            Console.WriteLine(rakam);
-            rakam++;
-            if (rakam < 20)
-                goto Etiket;
+            //    int rakam = 0;
+            //Etiket: //label
+            //    Console.WriteLine(rakam);
+            //    rakam++;
+            //    if (rakam < 20)
+            //        goto Etiket;
 
             // Burası 0
             // İstenilen sayının faktöriyelini hesaplayan prog.
@@ -341,55 +341,55 @@ namespace Ders3_IF_ELSE_IF_ELSE
             ///     SWITCH CASE     ///////
             ///////////////////////////////
 
-            string seviye = "orta";
-            switch (seviye)
-            {
-                case "kolay":
-                    Console.WriteLine("Seviye : Kolay");
-                    break;  // switch-case'den çıkmak için.
-                case "orta":
-                    Console.WriteLine("Seviye : Orta");
-                    break;
-                case "zor":
-                    Console.WriteLine("Seviye : Zor");
-                    break;
-                default:
-                    Console.WriteLine("Seviye hatalı !");
-                    break;
-            }
+            //string seviye = "orta";
+            //switch (seviye)
+            //{
+            //    case "kolay":
+            //        Console.WriteLine("Seviye : Kolay");
+            //        break;  // switch-case'den çıkmak için.
+            //    case "orta":
+            //        Console.WriteLine("Seviye : Orta");
+            //        break;
+            //    case "zor":
+            //        Console.WriteLine("Seviye : Zor");
+            //        break;
+            //    default:
+            //        Console.WriteLine("Seviye hatalı !");
+            //        break;
+            //}
             // Klavyeden 2 sayı ve işlem bilgisi alıp.
             // switch kullanarak seçilen işleme göre sonucu gösterecek prog. yazınız.
             // topla, bol, carp, cıkar
 
-            Console.Write("Sayı 1:");
-            float sayi1 = Convert.ToSingle(Console.ReadLine());
-            Console.Write("Sayı 2:");
-            float sayi2 = Convert.ToSingle(Console.ReadLine());
-            Console.Write("İşlem :");
-            string islem = Console.ReadLine();
-            switch (islem)
-            {
-                case "toplama":
-                    Console.WriteLine($"Toplam = {sayi1 + sayi2}");
-                    break;
-                case "çıkarma":
-                    Console.WriteLine($"Fark = {sayi1 - sayi2}");
-                    break;
-                case "çarpma":
-                    Console.WriteLine($"Çarpım = {sayi1 * sayi2}");
-                    break;
-                case "bölme":
-                    if (sayi2 != 0)
-                    {
-                        Console.WriteLine($"Bölüm = {sayi1 / sayi2}");
-                        break;
-                    }
-                    Console.WriteLine("Bölen 0 olamaz !");
-                    break;
-                default:
-                    Console.WriteLine("Hatalı İşlem!");
-                    break;
-            }
+            //Console.Write("Sayı 1:");
+            //float sayi1 = Convert.ToSingle(Console.ReadLine());
+            //Console.Write("Sayı 2:");
+            //float sayi2 = Convert.ToSingle(Console.ReadLine());
+            //Console.Write("İşlem :");
+            //string islem = Console.ReadLine();
+            //switch (islem)
+            //{
+            //    case "toplama":
+            //        Console.WriteLine($"Toplam = {sayi1 + sayi2}");
+            //        break;
+            //    case "çıkarma":
+            //        Console.WriteLine($"Fark = {sayi1 - sayi2}");
+            //        break;
+            //    case "çarpma":
+            //        Console.WriteLine($"Çarpım = {sayi1 * sayi2}");
+            //        break;
+            //    case "bölme":
+            //        if (sayi2 != 0)
+            //        {
+            //            Console.WriteLine($"Bölüm = {sayi1 / sayi2}");
+            //            break;
+            //        }
+            //        Console.WriteLine("Bölen 0 olamaz !");
+            //        break;
+            //    default:
+            //        Console.WriteLine("Hatalı İşlem!");
+            //        break;
+            //}
             Console.ReadLine();
 
 

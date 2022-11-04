@@ -6,10 +6,15 @@ namespace ConsoleApp3
     {
         static void Main(string[] args)
         {
+            int i;
+            string str_i;
+        giris:
             Console.WriteLine("Bir sayı giriniz");
 
-            int i = Convert.ToInt32(Console.ReadLine());
-
+            str_i = Console.ReadLine();
+            bool b = int.TryParse(str_i, out i);
+            if (!b || i == 0)
+                goto giris;
             if (i % 2 == 0)
                 Console.WriteLine("Bu sayı 2 ye tam bölünür.");
             if (i % 3 == 0)

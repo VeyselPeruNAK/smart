@@ -1,0 +1,16 @@
+C:\Users\veyse\source\repos\smart\Ders2-TypeConversions\bin\Debug\net5.0\Ders2-TypeConversions.exe
+C:\Users\veyse\source\repos\smart\Ders2-TypeConversions\bin\Debug\net5.0\Ders2-TypeConversions.deps.json
+C:\Users\veyse\source\repos\smart\Ders2-TypeConversions\bin\Debug\net5.0\Ders2-TypeConversions.runtimeconfig.json
+C:\Users\veyse\source\repos\smart\Ders2-TypeConversions\bin\Debug\net5.0\Ders2-TypeConversions.runtimeconfig.dev.json
+C:\Users\veyse\source\repos\smart\Ders2-TypeConversions\bin\Debug\net5.0\Ders2-TypeConversions.dll
+C:\Users\veyse\source\repos\smart\Ders2-TypeConversions\bin\Debug\net5.0\ref\Ders2-TypeConversions.dll
+C:\Users\veyse\source\repos\smart\Ders2-TypeConversions\bin\Debug\net5.0\Ders2-TypeConversions.pdb
+C:\Users\veyse\source\repos\smart\Ders2-TypeConversions\obj\Debug\net5.0\Ders2-TypeConversions.csproj.AssemblyReference.cache
+C:\Users\veyse\source\repos\smart\Ders2-TypeConversions\obj\Debug\net5.0\Ders2-TypeConversions.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\veyse\source\repos\smart\Ders2-TypeConversions\obj\Debug\net5.0\Ders2-TypeConversions.AssemblyInfoInputs.cache
+C:\Users\veyse\source\repos\smart\Ders2-TypeConversions\obj\Debug\net5.0\Ders2-TypeConversions.AssemblyInfo.cs
+C:\Users\veyse\source\repos\smart\Ders2-TypeConversions\obj\Debug\net5.0\Ders2-TypeConversions.csproj.CoreCompileInputs.cache
+C:\Users\veyse\source\repos\smart\Ders2-TypeConversions\obj\Debug\net5.0\Ders2-TypeConversions.dll
+C:\Users\veyse\source\repos\smart\Ders2-TypeConversions\obj\Debug\net5.0\ref\Ders2-TypeConversions.dll
+C:\Users\veyse\source\repos\smart\Ders2-TypeConversions\obj\Debug\net5.0\Ders2-TypeConversions.pdb
+C:\Users\veyse\source\repos\smart\Ders2-TypeConversions\obj\Debug\net5.0\Ders2-TypeConversions.genruntimeconfig.cache
