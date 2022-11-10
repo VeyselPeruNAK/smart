@@ -6,6 +6,9 @@ namespace Ders4_WhileLoop
     {
         static void Main(string[] args)
         {
+
+            //Emir Emre Tuğberk
+
             //int prim = 3500;
             //while (prim < 7200)
             //{

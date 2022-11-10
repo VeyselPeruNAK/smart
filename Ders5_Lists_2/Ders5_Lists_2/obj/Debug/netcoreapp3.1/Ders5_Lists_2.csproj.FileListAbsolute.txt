@@ -1,0 +1,14 @@
+C:\Users\veyse\source\repos\Sabah101\Ders5_Lists_2\Ders5_Lists_2\bin\Debug\netcoreapp3.1\Ders5_Lists_2.exe
+C:\Users\veyse\source\repos\Sabah101\Ders5_Lists_2\Ders5_Lists_2\bin\Debug\netcoreapp3.1\Ders5_Lists_2.deps.json
+C:\Users\veyse\source\repos\Sabah101\Ders5_Lists_2\Ders5_Lists_2\bin\Debug\netcoreapp3.1\Ders5_Lists_2.runtimeconfig.json
+C:\Users\veyse\source\repos\Sabah101\Ders5_Lists_2\Ders5_Lists_2\bin\Debug\netcoreapp3.1\Ders5_Lists_2.runtimeconfig.dev.json
+C:\Users\veyse\source\repos\Sabah101\Ders5_Lists_2\Ders5_Lists_2\bin\Debug\netcoreapp3.1\Ders5_Lists_2.dll
+C:\Users\veyse\source\repos\Sabah101\Ders5_Lists_2\Ders5_Lists_2\bin\Debug\netcoreapp3.1\Ders5_Lists_2.pdb
+C:\Users\veyse\source\repos\Sabah101\Ders5_Lists_2\Ders5_Lists_2\obj\Debug\netcoreapp3.1\Ders5_Lists_2.csproj.AssemblyReference.cache
+C:\Users\veyse\source\repos\Sabah101\Ders5_Lists_2\Ders5_Lists_2\obj\Debug\netcoreapp3.1\Ders5_Lists_2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\veyse\source\repos\Sabah101\Ders5_Lists_2\Ders5_Lists_2\obj\Debug\netcoreapp3.1\Ders5_Lists_2.AssemblyInfoInputs.cache
+C:\Users\veyse\source\repos\Sabah101\Ders5_Lists_2\Ders5_Lists_2\obj\Debug\netcoreapp3.1\Ders5_Lists_2.AssemblyInfo.cs
+C:\Users\veyse\source\repos\Sabah101\Ders5_Lists_2\Ders5_Lists_2\obj\Debug\netcoreapp3.1\Ders5_Lists_2.csproj.CoreCompileInputs.cache
+C:\Users\veyse\source\repos\Sabah101\Ders5_Lists_2\Ders5_Lists_2\obj\Debug\netcoreapp3.1\Ders5_Lists_2.dll
+C:\Users\veyse\source\repos\Sabah101\Ders5_Lists_2\Ders5_Lists_2\obj\Debug\netcoreapp3.1\Ders5_Lists_2.pdb
+C:\Users\veyse\source\repos\Sabah101\Ders5_Lists_2\Ders5_Lists_2\obj\Debug\netcoreapp3.1\Ders5_Lists_2.genruntimeconfig.cache
