@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\veyse\\source\\repos\\Sabah101\\Ders5_Lists_2\\Ders5_Lists_2\\Ders5_Lists_2.csproj": {}
+    "C:\\Users\\veyse\\source\\repos\\smart\\Ders5_Lists_2\\Ders5_Lists_2\\Ders5_Lists_2.csproj": {}
   },
   "projects": {
-    "C:\\Users\\veyse\\source\\repos\\Sabah101\\Ders5_Lists_2\\Ders5_Lists_2\\Ders5_Lists_2.csproj": {
+    "C:\\Users\\veyse\\source\\repos\\smart\\Ders5_Lists_2\\Ders5_Lists_2\\Ders5_Lists_2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\veyse\\source\\repos\\Sabah101\\Ders5_Lists_2\\Ders5_Lists_2\\Ders5_Lists_2.csproj",
+        "projectUniqueName": "C:\\Users\\veyse\\source\\repos\\smart\\Ders5_Lists_2\\Ders5_Lists_2\\Ders5_Lists_2.csproj",
         "projectName": "Ders5_Lists_2",
-        "projectPath": "C:\\Users\\veyse\\source\\repos\\Sabah101\\Ders5_Lists_2\\Ders5_Lists_2\\Ders5_Lists_2.csproj",
+        "projectPath": "C:\\Users\\veyse\\source\\repos\\smart\\Ders5_Lists_2\\Ders5_Lists_2\\Ders5_Lists_2.csproj",
         "packagesPath": "C:\\Users\\veyse\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\veyse\\source\\repos\\Sabah101\\Ders5_Lists_2\\Ders5_Lists_2\\obj\\",
+        "outputPath": "C:\\Users\\veyse\\source\\repos\\smart\\Ders5_Lists_2\\Ders5_Lists_2\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\veyse\\AppData\\Roaming\\NuGet\\NuGet.Config",

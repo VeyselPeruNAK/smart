@@ -23,16 +23,16 @@ namespace Ders5_Lists
 
 
             //// Veriye Ulaşma
-            Console.WriteLine(ilkListem[0]);
-            Console.WriteLine(ilkListem[1]);
-            Console.WriteLine(sehirler[3]);
+            //Console.WriteLine(ilkListem[0]);
+            //Console.WriteLine(ilkListem[1]);
+            //Console.WriteLine(sehirler[3]);
 
-            Console.WriteLine("BİTTİ");
-            foreach (var sehir in sehirler)
-            {
-                Console.WriteLine(sehir);
-            }
-            Console.ReadKey();
+            //Console.WriteLine("BİTTİ");
+            //foreach (var sehir in sehirler)
+            //{
+            //    Console.WriteLine(sehir);
+            //}
+            ////Console.ReadKey();
 
             //foreach (var item in ilkListem)
             //{
@@ -40,12 +40,14 @@ namespace Ders5_Lists
             //}
 
             //// Temizleme
-            //ilkListem.Clear();
-            //foreach (var item in ilkListem)
-            //{
-            //    Console.WriteLine(item);
-            //}
-
+            //ilkListem.Clear();     ///////// Liste clear!!!!
+            //////Console.WriteLine("Liste:");
+            //////foreach (var item in ilkListem)
+            //////{
+            //////    Console.WriteLine(item);
+            //////}
+            //////Console.WriteLine("Liste bitti.");
+            //////Console.ReadLine();
 
             //// Listedeki toplam eleman sayısını bulma
             //Console.WriteLine(sehirler.Count);
@@ -58,18 +60,18 @@ namespace Ders5_Lists
             //    sehirler.Insert(1, "Sivas");
 
             //// Listeden Silme
-            sehirler.Remove("Manisa");
-            sehirler.Remove("Manisa");
-            sehirler.Remove("Manisa");
-            sehirler.Remove("Manisa");
-            sehirler.Remove("Manisa");
+            //////sehirler.Remove("Manisa");
+            //////sehirler.Remove("Manisa");
+            //////sehirler.Remove("Manisa");
+            //////sehirler.Remove("Manisa");
+            //////sehirler.Remove("Manisa");
 
-            foreach (var sehir in sehirler)
-            {
-                Console.WriteLine(sehir);
-            }
-            Console.WriteLine("v");
-            sehirler.RemoveAt(2); // 2. indexi sil.
+            //////foreach (var sehir in sehirler)
+            //////{
+            //////    Console.WriteLine(sehir);
+            //////}
+            //////Console.WriteLine("v");
+            //////sehirler.RemoveAt(2); // 2. indexi sil.
 
 
 
