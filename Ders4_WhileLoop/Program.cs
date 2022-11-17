@@ -106,7 +106,8 @@ namespace Ders4_WhileLoop
             // break kavramı
 
 
-            // SORU : Klavyeden girilen ifade "bitir" değil ise girilen sayıların karesini toplayıp ekrana yazdıran programı yazınız.
+            // SORU : Klavyeden girilen ifade "bitir" değil ise girilen sayıların
+            // karesini toplayıp ekrana yazdıran programı yazınız.
             // Koşul: girilen sayı 5 ve 5'in katı ise de programdan çıkılacak.
             //Console.Write("Sayı giriniz : ");
             //string str = Console.ReadLine();

@@ -11,15 +11,15 @@ namespace Ders5_Lists
             //// Dİzilerden farklı olarak. Kapasitesi sınırlı değildir. otomatik genişler.
 
             //// Tanımlama
-            List<int> ilkListem = new List<int>();
-            List<string> sehirler = new List<string>() { "istanbul", "İzmir", "Manisa", "Manisa", "Van" };
-            List<int> araListe = new List<int>() { 1000, 2000, 3000 };
-            //// Veri Ekleme
-            ilkListem.Add(1990); // Add metodu listenin sonuna ekleme yapar.
-            ilkListem.Add(1231);
-            ilkListem.Add(1921);
-            ilkListem.Insert(0, 1988); // 0. index'e 1988 değerini atar.
-            //ilkListem.InsertRange(2, araListe);
+            //List<int> ilkListem = new List<int>();
+            //List<string> sehirler = new List<string>() { "istanbul", "İzmir", "Manisa", "Manisa", "Van" };
+            //List<int> araListe = new List<int>() { 1000, 2000, 3000 };
+            ////// Veri Ekleme
+            //ilkListem.Add(1990); // Add metodu listenin sonuna ekleme yapar.
+            //ilkListem.Add(1231);
+            //ilkListem.Add(1921);
+            //ilkListem.Insert(0, 1988); // 0. index'e 1988 değerini atar.
+            ////ilkListem.InsertRange(2, araListe);
 
 
             //// Veriye Ulaşma
@@ -104,47 +104,48 @@ namespace Ders5_Lists
             //# Örn: l1 = [11,22,33,44,55] l2 = [55,66,77,88,99]  l3 = [11,22,33,44,66,77,88,99]
             // CEVAP:
 
-            //List<int> liste1 = new List<int>();
-            //List<int> liste2 = new List<int>();
-            //List<int> listeFark = new List<int>();
-            //Random rnd = new Random();
+            List<int> liste1 = new List<int>();
+            List<int> liste2 = new List<int>();
+            List<int> listeFark = new List<int>();
+            Random rnd = new Random();
 
-            //// Listelere sayı üretip ekledik.
-            //Console.Write("Liste1:");
+            // Listelere sayı üretip ekledik.
+            Console.Write("Liste1:");
 
-            //for (int i = 0; i < 5; i++)
-            //{
-            //    int sayi = rnd.Next(1, 10);
-            //    liste1.Add(sayi);
-            //    Console.Write(sayi + "  ");
-            //}
-            //Console.WriteLine();
-            //Console.Write("Liste2:");
+            for (int i = 0; i < 5; i++)
+            {
+                int sayi = rnd.Next(1, 10);
+                liste1.Add(sayi);
+                Console.Write(sayi + "  ");
+            }
+            Console.WriteLine();
+            Console.Write("Liste2:");
 
-            //for (int i = 0; i < 5; i++)
-            //{
-            //    int sayi = rnd.Next(1, 10);
-            //    liste2.Add(sayi);
-            //    Console.Write(sayi + "  ");
-            //}
-            //Console.WriteLine();
-            //// Farkları ekledik.
-            //foreach (var eleman in liste1)
-            //{
-            //    if (liste2.Contains(eleman) == false)
-            //        listeFark.Add(eleman);
-            //}
-            //foreach (var eleman in liste2)
-            //{
-            //    if (liste1.Contains(eleman) == false)
-            //        listeFark.Add(eleman);
-            //}
-            //Console.Write("Farklar: ");
-            //for (int i = 0; i < listeFark.Count; i++)
-            //{
-            //    Console.Write(listeFark[i] + " ");
-            //}
+            for (int i = 0; i < 5; i++)
+            {
+                int sayi = rnd.Next(1, 10);
+                liste2.Add(sayi);
+                Console.Write(sayi + "  ");
+            }
+            Console.WriteLine();
+            // Farkları ekledik.
+            foreach (var eleman in liste1)
+            {
+                if (liste2.Contains(eleman) == false)
+                    listeFark.Add(eleman);
+            }
+            foreach (var eleman in liste2)
+            {
+                if (liste1.Contains(eleman) == false)
+                    listeFark.Add(eleman);
+            }
+            Console.Write("Farklar: ");
+            for (int i = 0; i < listeFark.Count; i++)
+            {
+                Console.Write(listeFark[i] + " ");
+            }
 
+            Console.ReadLine();
 
 
             // 1-20 arasında 15 sayı üretip bir listeye atın.

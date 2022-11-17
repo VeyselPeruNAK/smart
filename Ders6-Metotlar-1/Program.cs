@@ -14,8 +14,8 @@ namespace Ders6_Metotlar_1
 
             //// Nesne üzerinden metot çağırma. (static değilse)
             //// OOP derslerinden sonra anlaşılacak.
-            //Program p = new Program();
-            //p.MerhabaDunya2();
+            Program p = new Program();
+            p.MerhabaDunya2();
 
 
 
@@ -56,11 +56,45 @@ namespace Ders6_Metotlar_1
             int k2 = Kare(7);
             Console.WriteLine($"7  sayısının karesi = " + k2);
 
-            Console.WriteLine($"7  sayısının karesi = " + Kare(7));
+            Console.WriteLine($"7 sayısının karesi = " + Kare(7));
 
 
             double fiyat = 100.0;
             Console.WriteLine(KDVHesapla(fiyat));
+            double kdvsizFiyat = 100;
+            double kdvLi = 0;
+            string kategori = "gıda";
+            if (kategori.ToLower() == "gıda")
+                kdvLi = kdvsizFiyat * 1.08;
+            else if (kategori.ToLower() == "eğitim")
+                kdvLi = kdvsizFiyat * 1.05;
+            else
+                kdvLi = kdvsizFiyat * 1.18;
+            kdvsizFiyat = 100;
+            kategori = "eğitim";
+            if (kategori.ToLower() == "gıda")
+                kdvLi = kdvsizFiyat * 1.08;
+            else if (kategori.ToLower() == "eğitim")
+                kdvLi = kdvsizFiyat * 1.05;
+            else
+                kdvLi = kdvsizFiyat * 1.18;
+            kdvsizFiyat = 200;
+            kategori = "spor";
+            if (kategori.ToLower() == "gıda")
+                kdvLi = kdvsizFiyat * 1.08;
+            else if (kategori.ToLower() == "eğitim")
+                kdvLi = kdvsizFiyat * 1.05;
+            else
+                kdvLi = kdvsizFiyat * 1.18;
+            kdvsizFiyat = 300;
+            kategori = "eğitim";
+            if (kategori.ToLower() == "gıda")
+                kdvLi = kdvsizFiyat * 1.08;
+            else if (kategori.ToLower() == "eğitim")
+                kdvLi = kdvsizFiyat * 1.05;
+            else
+                kdvLi = kdvsizFiyat * 1.18;
+
             Console.WriteLine("Gıda:" + KDVHesapla(fiyat, "gıda"));
             Console.WriteLine("Spor:" + KDVHesapla(fiyat, "spor"));
             Console.WriteLine("Egitim:" + KDVHesapla(fiyat, "egitim")); //

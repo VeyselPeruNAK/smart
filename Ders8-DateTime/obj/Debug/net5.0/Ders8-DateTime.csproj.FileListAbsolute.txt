@@ -1,0 +1,16 @@
+c:\Users\veyse\source\repos\Sabah101\Ders8-DateTime\bin\Debug\net5.0\Ders8-DateTime.exe
+C:\Users\veyse\source\repos\Sabah101\Ders8-DateTime\bin\Debug\net5.0\Ders8-DateTime.deps.json
+C:\Users\veyse\source\repos\Sabah101\Ders8-DateTime\bin\Debug\net5.0\Ders8-DateTime.runtimeconfig.json
+C:\Users\veyse\source\repos\Sabah101\Ders8-DateTime\bin\Debug\net5.0\Ders8-DateTime.runtimeconfig.dev.json
+c:\Users\veyse\source\repos\Sabah101\Ders8-DateTime\bin\Debug\net5.0\Ders8-DateTime.dll
+C:\Users\veyse\source\repos\Sabah101\Ders8-DateTime\bin\Debug\net5.0\ref\Ders8-DateTime.dll
+c:\Users\veyse\source\repos\Sabah101\Ders8-DateTime\bin\Debug\net5.0\Ders8-DateTime.pdb
+c:\Users\veyse\source\repos\Sabah101\Ders8-DateTime\obj\Debug\net5.0\Ders8-DateTime.csproj.AssemblyReference.cache
+c:\Users\veyse\source\repos\Sabah101\Ders8-DateTime\obj\Debug\net5.0\Ders8-DateTime.GeneratedMSBuildEditorConfig.editorconfig
+c:\Users\veyse\source\repos\Sabah101\Ders8-DateTime\obj\Debug\net5.0\Ders8-DateTime.AssemblyInfoInputs.cache
+c:\Users\veyse\source\repos\Sabah101\Ders8-DateTime\obj\Debug\net5.0\Ders8-DateTime.AssemblyInfo.cs
+c:\Users\veyse\source\repos\Sabah101\Ders8-DateTime\obj\Debug\net5.0\Ders8-DateTime.csproj.CoreCompileInputs.cache
+c:\Users\veyse\source\repos\Sabah101\Ders8-DateTime\obj\Debug\net5.0\Ders8-DateTime.dll
+c:\Users\veyse\source\repos\Sabah101\Ders8-DateTime\obj\Debug\net5.0\ref\Ders8-DateTime.dll
+c:\Users\veyse\source\repos\Sabah101\Ders8-DateTime\obj\Debug\net5.0\Ders8-DateTime.pdb
+C:\Users\veyse\source\repos\Sabah101\Ders8-DateTime\obj\Debug\net5.0\Ders8-DateTime.genruntimeconfig.cache

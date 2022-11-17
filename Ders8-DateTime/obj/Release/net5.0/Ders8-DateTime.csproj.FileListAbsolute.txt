@@ -1,0 +1,16 @@
+C:\Users\na\Desktop\NA-203-SABAH\DERSLER\Ders8-DateTime\bin\Release\net5.0\Ders8-DateTime.exe
+C:\Users\na\Desktop\NA-203-SABAH\DERSLER\Ders8-DateTime\bin\Release\net5.0\Ders8-DateTime.deps.json
+C:\Users\na\Desktop\NA-203-SABAH\DERSLER\Ders8-DateTime\bin\Release\net5.0\Ders8-DateTime.runtimeconfig.json
+C:\Users\na\Desktop\NA-203-SABAH\DERSLER\Ders8-DateTime\bin\Release\net5.0\Ders8-DateTime.runtimeconfig.dev.json
+C:\Users\na\Desktop\NA-203-SABAH\DERSLER\Ders8-DateTime\bin\Release\net5.0\Ders8-DateTime.dll
+C:\Users\na\Desktop\NA-203-SABAH\DERSLER\Ders8-DateTime\bin\Release\net5.0\ref\Ders8-DateTime.dll
+C:\Users\na\Desktop\NA-203-SABAH\DERSLER\Ders8-DateTime\bin\Release\net5.0\Ders8-DateTime.pdb
+C:\Users\na\Desktop\NA-203-SABAH\DERSLER\Ders8-DateTime\obj\Release\net5.0\Ders8-DateTime.csproj.AssemblyReference.cache
+C:\Users\na\Desktop\NA-203-SABAH\DERSLER\Ders8-DateTime\obj\Release\net5.0\Ders8-DateTime.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\na\Desktop\NA-203-SABAH\DERSLER\Ders8-DateTime\obj\Release\net5.0\Ders8-DateTime.AssemblyInfoInputs.cache
+C:\Users\na\Desktop\NA-203-SABAH\DERSLER\Ders8-DateTime\obj\Release\net5.0\Ders8-DateTime.AssemblyInfo.cs
+C:\Users\na\Desktop\NA-203-SABAH\DERSLER\Ders8-DateTime\obj\Release\net5.0\Ders8-DateTime.csproj.CoreCompileInputs.cache
+C:\Users\na\Desktop\NA-203-SABAH\DERSLER\Ders8-DateTime\obj\Release\net5.0\Ders8-DateTime.dll
+C:\Users\na\Desktop\NA-203-SABAH\DERSLER\Ders8-DateTime\obj\Release\net5.0\ref\Ders8-DateTime.dll
+C:\Users\na\Desktop\NA-203-SABAH\DERSLER\Ders8-DateTime\obj\Release\net5.0\Ders8-DateTime.pdb
+C:\Users\na\Desktop\NA-203-SABAH\DERSLER\Ders8-DateTime\obj\Release\net5.0\Ders8-DateTime.genruntimeconfig.cache

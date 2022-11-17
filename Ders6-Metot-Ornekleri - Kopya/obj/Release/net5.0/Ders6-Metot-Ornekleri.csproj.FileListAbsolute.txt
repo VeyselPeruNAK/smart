@@ -1,0 +1,16 @@
+C:\Users\na\Desktop\NA-203-SABAH\DERSLER\Ders6-Metot-Ornekleri\bin\Release\net5.0\Ders6-Metot-Ornekleri.exe
+C:\Users\na\Desktop\NA-203-SABAH\DERSLER\Ders6-Metot-Ornekleri\bin\Release\net5.0\Ders6-Metot-Ornekleri.deps.json
+C:\Users\na\Desktop\NA-203-SABAH\DERSLER\Ders6-Metot-Ornekleri\bin\Release\net5.0\Ders6-Metot-Ornekleri.runtimeconfig.json
+C:\Users\na\Desktop\NA-203-SABAH\DERSLER\Ders6-Metot-Ornekleri\bin\Release\net5.0\Ders6-Metot-Ornekleri.runtimeconfig.dev.json
+C:\Users\na\Desktop\NA-203-SABAH\DERSLER\Ders6-Metot-Ornekleri\bin\Release\net5.0\Ders6-Metot-Ornekleri.dll
+C:\Users\na\Desktop\NA-203-SABAH\DERSLER\Ders6-Metot-Ornekleri\bin\Release\net5.0\ref\Ders6-Metot-Ornekleri.dll
+C:\Users\na\Desktop\NA-203-SABAH\DERSLER\Ders6-Metot-Ornekleri\bin\Release\net5.0\Ders6-Metot-Ornekleri.pdb
+C:\Users\na\Desktop\NA-203-SABAH\DERSLER\Ders6-Metot-Ornekleri\obj\Release\net5.0\Ders6-Metot-Ornekleri.csproj.AssemblyReference.cache
+C:\Users\na\Desktop\NA-203-SABAH\DERSLER\Ders6-Metot-Ornekleri\obj\Release\net5.0\Ders6-Metot-Ornekleri.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\na\Desktop\NA-203-SABAH\DERSLER\Ders6-Metot-Ornekleri\obj\Release\net5.0\Ders6-Metot-Ornekleri.AssemblyInfoInputs.cache
+C:\Users\na\Desktop\NA-203-SABAH\DERSLER\Ders6-Metot-Ornekleri\obj\Release\net5.0\Ders6-Metot-Ornekleri.AssemblyInfo.cs
+C:\Users\na\Desktop\NA-203-SABAH\DERSLER\Ders6-Metot-Ornekleri\obj\Release\net5.0\Ders6-Metot-Ornekleri.csproj.CoreCompileInputs.cache
+C:\Users\na\Desktop\NA-203-SABAH\DERSLER\Ders6-Metot-Ornekleri\obj\Release\net5.0\Ders6-Metot-Ornekleri.dll
+C:\Users\na\Desktop\NA-203-SABAH\DERSLER\Ders6-Metot-Ornekleri\obj\Release\net5.0\ref\Ders6-Metot-Ornekleri.dll
+C:\Users\na\Desktop\NA-203-SABAH\DERSLER\Ders6-Metot-Ornekleri\obj\Release\net5.0\Ders6-Metot-Ornekleri.pdb
+C:\Users\na\Desktop\NA-203-SABAH\DERSLER\Ders6-Metot-Ornekleri\obj\Release\net5.0\Ders6-Metot-Ornekleri.genruntimeconfig.cache

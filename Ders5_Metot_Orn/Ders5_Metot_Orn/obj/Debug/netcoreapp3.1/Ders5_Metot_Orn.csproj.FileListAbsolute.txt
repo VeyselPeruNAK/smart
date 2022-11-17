@@ -1,0 +1,14 @@
+C:\Users\veyse\source\repos\smart\Ders5_Metot_Orn\Ders5_Metot_Orn\bin\Debug\netcoreapp3.1\Ders5_Metot_Orn.exe
+C:\Users\veyse\source\repos\smart\Ders5_Metot_Orn\Ders5_Metot_Orn\bin\Debug\netcoreapp3.1\Ders5_Metot_Orn.deps.json
+C:\Users\veyse\source\repos\smart\Ders5_Metot_Orn\Ders5_Metot_Orn\bin\Debug\netcoreapp3.1\Ders5_Metot_Orn.runtimeconfig.json
+C:\Users\veyse\source\repos\smart\Ders5_Metot_Orn\Ders5_Metot_Orn\bin\Debug\netcoreapp3.1\Ders5_Metot_Orn.runtimeconfig.dev.json
+C:\Users\veyse\source\repos\smart\Ders5_Metot_Orn\Ders5_Metot_Orn\bin\Debug\netcoreapp3.1\Ders5_Metot_Orn.dll
+C:\Users\veyse\source\repos\smart\Ders5_Metot_Orn\Ders5_Metot_Orn\bin\Debug\netcoreapp3.1\Ders5_Metot_Orn.pdb
+C:\Users\veyse\source\repos\smart\Ders5_Metot_Orn\Ders5_Metot_Orn\obj\Debug\netcoreapp3.1\Ders5_Metot_Orn.csproj.AssemblyReference.cache
+C:\Users\veyse\source\repos\smart\Ders5_Metot_Orn\Ders5_Metot_Orn\obj\Debug\netcoreapp3.1\Ders5_Metot_Orn.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\veyse\source\repos\smart\Ders5_Metot_Orn\Ders5_Metot_Orn\obj\Debug\netcoreapp3.1\Ders5_Metot_Orn.AssemblyInfoInputs.cache
+C:\Users\veyse\source\repos\smart\Ders5_Metot_Orn\Ders5_Metot_Orn\obj\Debug\netcoreapp3.1\Ders5_Metot_Orn.AssemblyInfo.cs
+C:\Users\veyse\source\repos\smart\Ders5_Metot_Orn\Ders5_Metot_Orn\obj\Debug\netcoreapp3.1\Ders5_Metot_Orn.csproj.CoreCompileInputs.cache
+C:\Users\veyse\source\repos\smart\Ders5_Metot_Orn\Ders5_Metot_Orn\obj\Debug\netcoreapp3.1\Ders5_Metot_Orn.dll
+C:\Users\veyse\source\repos\smart\Ders5_Metot_Orn\Ders5_Metot_Orn\obj\Debug\netcoreapp3.1\Ders5_Metot_Orn.pdb
+C:\Users\veyse\source\repos\smart\Ders5_Metot_Orn\Ders5_Metot_Orn\obj\Debug\netcoreapp3.1\Ders5_Metot_Orn.genruntimeconfig.cache

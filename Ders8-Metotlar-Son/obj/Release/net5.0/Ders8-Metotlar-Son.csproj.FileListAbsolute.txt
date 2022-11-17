@@ -1,0 +1,15 @@
+C:\Users\na\Desktop\NA-203-SABAH\DERSLER\Ders8-Metotlar-Son\bin\Release\net5.0\Ders8-Metotlar-Son.exe
+C:\Users\na\Desktop\NA-203-SABAH\DERSLER\Ders8-Metotlar-Son\bin\Release\net5.0\Ders8-Metotlar-Son.deps.json
+C:\Users\na\Desktop\NA-203-SABAH\DERSLER\Ders8-Metotlar-Son\bin\Release\net5.0\Ders8-Metotlar-Son.runtimeconfig.json
+C:\Users\na\Desktop\NA-203-SABAH\DERSLER\Ders8-Metotlar-Son\bin\Release\net5.0\Ders8-Metotlar-Son.runtimeconfig.dev.json
+C:\Users\na\Desktop\NA-203-SABAH\DERSLER\Ders8-Metotlar-Son\bin\Release\net5.0\Ders8-Metotlar-Son.dll
+C:\Users\na\Desktop\NA-203-SABAH\DERSLER\Ders8-Metotlar-Son\bin\Release\net5.0\ref\Ders8-Metotlar-Son.dll
+C:\Users\na\Desktop\NA-203-SABAH\DERSLER\Ders8-Metotlar-Son\bin\Release\net5.0\Ders8-Metotlar-Son.pdb
+C:\Users\na\Desktop\NA-203-SABAH\DERSLER\Ders8-Metotlar-Son\obj\Release\net5.0\Ders8-Metotlar-Son.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\na\Desktop\NA-203-SABAH\DERSLER\Ders8-Metotlar-Son\obj\Release\net5.0\Ders8-Metotlar-Son.AssemblyInfoInputs.cache
+C:\Users\na\Desktop\NA-203-SABAH\DERSLER\Ders8-Metotlar-Son\obj\Release\net5.0\Ders8-Metotlar-Son.AssemblyInfo.cs
+C:\Users\na\Desktop\NA-203-SABAH\DERSLER\Ders8-Metotlar-Son\obj\Release\net5.0\Ders8-Metotlar-Son.csproj.CoreCompileInputs.cache
+C:\Users\na\Desktop\NA-203-SABAH\DERSLER\Ders8-Metotlar-Son\obj\Release\net5.0\Ders8-Metotlar-Son.dll
+C:\Users\na\Desktop\NA-203-SABAH\DERSLER\Ders8-Metotlar-Son\obj\Release\net5.0\ref\Ders8-Metotlar-Son.dll
+C:\Users\na\Desktop\NA-203-SABAH\DERSLER\Ders8-Metotlar-Son\obj\Release\net5.0\Ders8-Metotlar-Son.pdb
+C:\Users\na\Desktop\NA-203-SABAH\DERSLER\Ders8-Metotlar-Son\obj\Release\net5.0\Ders8-Metotlar-Son.genruntimeconfig.cache

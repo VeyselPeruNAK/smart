@@ -1,0 +1,15 @@
+C:\Users\na\Desktop\NA-203-SABAH\DERSLER\Ders8-MathMethods\bin\Release\net5.0\Ders8-MathMethods.exe
+C:\Users\na\Desktop\NA-203-SABAH\DERSLER\Ders8-MathMethods\bin\Release\net5.0\Ders8-MathMethods.deps.json
+C:\Users\na\Desktop\NA-203-SABAH\DERSLER\Ders8-MathMethods\bin\Release\net5.0\Ders8-MathMethods.runtimeconfig.json
+C:\Users\na\Desktop\NA-203-SABAH\DERSLER\Ders8-MathMethods\bin\Release\net5.0\Ders8-MathMethods.runtimeconfig.dev.json
+C:\Users\na\Desktop\NA-203-SABAH\DERSLER\Ders8-MathMethods\bin\Release\net5.0\Ders8-MathMethods.dll
+C:\Users\na\Desktop\NA-203-SABAH\DERSLER\Ders8-MathMethods\bin\Release\net5.0\ref\Ders8-MathMethods.dll
+C:\Users\na\Desktop\NA-203-SABAH\DERSLER\Ders8-MathMethods\bin\Release\net5.0\Ders8-MathMethods.pdb
+C:\Users\na\Desktop\NA-203-SABAH\DERSLER\Ders8-MathMethods\obj\Release\net5.0\Ders8-MathMethods.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\na\Desktop\NA-203-SABAH\DERSLER\Ders8-MathMethods\obj\Release\net5.0\Ders8-MathMethods.AssemblyInfoInputs.cache
+C:\Users\na\Desktop\NA-203-SABAH\DERSLER\Ders8-MathMethods\obj\Release\net5.0\Ders8-MathMethods.AssemblyInfo.cs
+C:\Users\na\Desktop\NA-203-SABAH\DERSLER\Ders8-MathMethods\obj\Release\net5.0\Ders8-MathMethods.csproj.CoreCompileInputs.cache
+C:\Users\na\Desktop\NA-203-SABAH\DERSLER\Ders8-MathMethods\obj\Release\net5.0\Ders8-MathMethods.dll
+C:\Users\na\Desktop\NA-203-SABAH\DERSLER\Ders8-MathMethods\obj\Release\net5.0\ref\Ders8-MathMethods.dll
+C:\Users\na\Desktop\NA-203-SABAH\DERSLER\Ders8-MathMethods\obj\Release\net5.0\Ders8-MathMethods.pdb
+C:\Users\na\Desktop\NA-203-SABAH\DERSLER\Ders8-MathMethods\obj\Release\net5.0\Ders8-MathMethods.genruntimeconfig.cache
