@@ -1,16 +1,24 @@
--- CustomerID'si ANTON olan kaydýn ContactName'ini 'Alfred Schmidt' ve City'sini 'Frankfurt' yapýnýz. 
+-- CustomerID'si CustomerID = 29720 olan kaydýn CompanyName'ini 'Alfred Schmidt' 
+--ve [EmailAddress]= 'alf@alf.com' yapýnýz. 
 
-UPDATE Customers
-SET ContactName = 'Alfred Schmidt', City= 'Frankfurt'
-WHERE CustomerID = 'ANTON';
+begin transaction
+UPDATE SalesLT.Customer
+SET CompanyName = 'Alfred Schmidt', [EmailAddress]= 'alf@alf.com'
+WHERE CustomerID = 29720
+Rollback
 
-SELECT * FROM Customers
-WHERE CustomerID = 'ANTON';
+SELECT * FROM SalesLT.Customer
+WHERE CustomerID = 29720
 
--- Country'si 'Mexico'olan kayýtlarýn ContactName'ini 'Juan' Yap!
-UPDATE Customers
-SET ContactName='Juan'
-WHERE Country='Mexico';
+-- Phone = '429-555-0145' olan kayýtlarýn ContactName'ini 'Juan Company' Yap!
+begin transaction
+UPDATE SalesLT.Customer
+SET CompanyName='Juan Company'
+WHERE Phone = '429-555-0145' -- 2 adet çýktý, niye?
+Rollback
+
+select * from SalesLT.Customer 
+WHERE Phone = '429-555-0145'
 
 --Be careful when updating records. If you omit the WHERE clause, ALL records will be updated!
 
@@ -23,33 +31,49 @@ WHERE Country='Mexico';
 begin transaction
 ROLLBACK
 
-select * FROM Customers WHERE ContactName='Juan';
+select * FROM SalesLT.Customer WHERE CompanyName='Juan Company';
 
-DELETE FROM Customers WHERE ContactName='Juan';
+begin transaction
+DELETE FROM SalesLT.Customer WHERE CompanyName='Juan Company';
+rollback
 
-SELECT * FROM Orders WHERE CustomerID IN(
-SELECT CustomerID FROM Customers  WHERE ContactName='Juan')
 
-DELETE FROM Orders WHERE CustomerID IN(
-SELECT CustomerID FROM Customers  WHERE ContactName='Juan')
+-- DROP CONSTRAINT ler:
+ALTER TABLE [SalesLT].[CustomerAddress]
+DROP CONSTRAINT [FK_CustomerAddress_Customer_CustomerID];
+ALTER TABLE SalesLT.SalesOrderHeader
+DROP CONSTRAINT FK_SalesOrderHeader_Customer_CustomerID;
 
-SELECT * FROM [Order Details] WHERE OrderID IN 
-(SELECT OrderID FROM Orders WHERE CustomerID IN(
-SELECT CustomerID FROM Customers  WHERE ContactName='Juan'))
 
-DELETE FROM [Order Details] WHERE OrderID IN 
-(SELECT OrderID FROM Orders WHERE CustomerID IN(
-SELECT CustomerID FROM Customers  WHERE ContactName='Juan'))
 
-DELETE FROM Orders WHERE CustomerID IN(
-SELECT CustomerID FROM Customers  WHERE ContactName='Juan')
 
+SELECT * FROM [SalesLT].[SalesOrderHeader] WHERE CustomerID IN(
+SELECT CustomerID FROM SalesLT.Customer  WHERE CompanyName='Juan Company')
+
+--Delete FROM [SalesLT].[SalesOrderHeader] WHERE CustomerID IN(
+--SELECT CustomerID FROM SalesLT.Customer  WHERE CompanyName='Juan Company')
+
+SELECT * FROM [SalesLT].[SalesOrderDetail] WHERE SalesOrderID IN 
+(SELECT SalesOrderID FROM [SalesLT].[SalesOrderHeader] WHERE CustomerID IN(
+SELECT CustomerID FROM SalesLT.Customer WHERE CompanyName='Juan Company'))
+
+begin transaction
+DELETE FROM [SalesLT].[SalesOrderDetail] WHERE SalesOrderID IN 
+(SELECT SalesOrderID FROM [SalesLT].[SalesOrderHeader] WHERE CustomerID IN(
+SELECT CustomerID FROM SalesLT.Customer WHERE CompanyName='Juan Company'))
+Rollback
+
+
+begin transaction
+DELETE FROM [SalesLT].[SalesOrderHeader] WHERE CustomerID IN(
+SELECT CustomerID FROM SalesLT.Customer  WHERE CompanyName='Juan Company')
+Rollback
 --The following SQL statement selects all the orders from the customer with CustomerID=4 ('Giovanni Rovelli'). 
 --We use the "Customers" and "Orders" tables, and give them the table aliases of "c" and "o" respectively 
 --(Here we use aliases to make the SQL shorter):
-SELECT o.OrderID, o.OrderDate, c.ContactName
-FROM Customers AS c, Orders AS o
-WHERE c.ContactName='Giovanni Rovelli' AND c.CustomerID=o.CustomerID;
+SELECT o.SalesOrderID, o.OrderDate, c.CompanyName
+FROM [SalesLT].[Customer] AS c, [SalesLT].[SalesOrderHeader] AS o
+WHERE c.CompanyName='Nearby Cycle Shop' AND c.CustomerID=o.CustomerID;
 
 --The GROUP BY statement groups rows that have the same values into summary rows, like "find the number of customers in each country".
 --The GROUP BY statement is often used with aggregate functions (COUNT(), MAX(), MIN(), SUM(), AVG()) to group the result-set by one or more columns.
@@ -59,26 +83,62 @@ SELECT column_name(s)
 FROM table_name
 WHERE condition
 GROUP BY column_name(s)
+HAVING grup_kriter
 ORDER BY column_name(s);
 */
 
---number of customers in each country:
-SELECT Country, COUNT(CustomerID)
-FROM Customers
-GROUP BY Country;
+--Satýcýnýn müþteri sayýlarý
+select SalesPerson, count(*) from [SalesLT].[Customer]
+GROUP by SalesPerson
+
+--title bazýnda müþteri sayýlarý
+select Title, count(*) from [SalesLT].[Customer]
+GROUP by Title
+
+--Satýcý ünvan bazýnda müþteri sayýlarý
+select SalesPerson, Title, count(*) from [SalesLT].[Customer]
+GROUP by SalesPerson, Title 
+---------------------------------------------------------------------------------
+--Sýnýflarýna öðrenci sayýlarý:
+select s.ad, count(*) 
+from tb_ogrenci o INNER JOIN tb_sinif s
+ON o.sinifID = s.ID
+GROUP BY s.ad 
+ORDER BY 1 
+
+-- 3 ten az sayýda öðrencisi olan öðretmenler.
+select r.ad + ' ' + r.soyad Öðretmen, count(*) [Öðrenci Sayýsý]
+from tb_ogrenci o INNER JOIN tb_ogretmen r
+ON o.ogretmenID = r.ID
+GROUP BY r.ad + ' ' + r.soyad
+HAVING count(*) <= 3
+ORDER BY 1 
+---------------------------------------------------------------------------------
+
+--number of customers of FirstNames:
+SELECT FirstName, COUNT(CustomerID)
+FROM SalesLT.Customer
+GROUP BY FirstName;
+
+SELECT *
+FROM SalesLT.Customer
+WHERE FirstName = 'Alan'
+
+
 
 --The following SQL statement lists the number of customers in each country, sorted high to low:
 
-SELECT COUNT(CustomerID), Country
-FROM Customers
-GROUP BY Country
+SELECT FirstName, COUNT(CustomerID)
+FROM SalesLT.Customer
+GROUP BY FirstName
 ORDER BY COUNT(CustomerID) DESC;
 
 --lists the number of orders sent by each shippe
-SELECT Shippers.CompanyName, COUNT(Orders.OrderID) AS NumberOfOrders FROM Orders
-INNER JOIN Shippers ON Orders.ShipVia = Shippers.ShipperID
-GROUP BY  Shippers.CompanyName
-ORDER BY 1;
+SELECT CustomerID, COUNT(*) AS NumberOfOrderDetail
+FROM [SalesLT].[SalesOrderDetail] SOD INNER JOIN [SalesLT].SalesOrderHeader SOH
+ON SOD.SalesOrderID = SOH.SalesOrderID
+GROUP BY  CustomerID
+ORDER BY 2 desc ;
 
 /*
 SELECT column_name(s)
@@ -89,52 +149,6 @@ HAVING condition
 ORDER BY column_name(s);
 */
 
---lists the number of customers in each country. Only include countries with more than 5 customers
-SELECT COUNT(CustomerID), Country
-FROM Customers
-GROUP BY Country
-HAVING COUNT(CustomerID) > 5;  -- <5
-
---lists the number of customers in each country, sorted high to low 
---(Only include countries with more than 5 customers):
-SELECT COUNT(CustomerID), Country
-FROM Customers
-GROUP BY Country
-HAVING COUNT(CustomerID) > 5
-ORDER BY COUNT(CustomerID) DESC;
-
--- ShipCountry baþýna 50'den az sipariþ(Orders) gelen ülkeleri, 
--- sipariþ adedine göre büyükten küçüðe sýralayýp yazan query.
-SELECT COUNT(OrderID), ShipCountry
-FROM Orders
-GROUP BY ShipCountry
-HAVING COUNT(ORDERID) < 50
-ORDER BY COUNT(OrderID) DESC;
-
---INSERT INTO SELECT
-
-/*
---Copy all columns from one table to another table:
-
-INSERT INTO table2
-SELECT * FROM table1
-WHERE condition;
-
---Copy only some columns from one table into another table:
-
-INSERT INTO table2 (column1, column2, column3, ...)
-SELECT column1, column2, column3, ...
-FROM table1
-WHERE condition;
-*/
-
---The following SQL statement copies "Suppliers" into "Customers" 
---(the columns that are not filled with data, will contain NULL):
--- Contactname'i 40 yap!!! 
-begin transaction
-INSERT INTO Customers (CustomerID,ContactName,CompanyName, City, Country)
-SELECT SupplierID,CompanyName, CompanyName, City, Country FROM Suppliers;
-ROLLBACK
 
 
 
@@ -147,106 +161,14 @@ CASE
 END;
 */
 
-SELECT OrderID, Quantity,
+SELECT SalesOrderID, OrderQty,
 CASE
-    WHEN Quantity > 30 THEN 'The quantity is greater than 30'
-    WHEN Quantity = 30 THEN 'The quantity is 30'
-    ELSE 'The quantity is under 30'
-END AS QuantityText
-FROM [Order Details];
+    WHEN OrderQty > 10 THEN 'The quantity is greater than 10'
+    WHEN OrderQty = 10 THEN 'The quantity is 10'
+    ELSE 'The quantity is under 10'
+END AS OrderQty
+FROM [SalesLT].[SalesOrderDetail];
 
---The following SQL will order the customers by City. 
---However, if City is NULL, then order by Country:
-
-
-SELECT ContactName, City, Country, 
-    CASE WHEN City IS NULL THEN Country
-    ELSE City
-END AS [Þehir]
-FROM Customers
-
---Customers ta kaç tekil Country var
-SELECT COUNT(DISTINCT Country) FROM Customers;
-
-SELECT * FROM Customers
-WHERE Country='Germany' AND (City='Berlin' OR City='München');
-
-SELECT ContactName, Address
-FROM Customers
-WHERE Address IS  NULL;
-
-SELECT * FROM Customers
-WHERE Country IN ('Germany', 'France', 'UK');
-
-SELECT City, Country FROM Customers
-WHERE Country='Germany'
-UNION ALL
-SELECT City, Country FROM Suppliers
-WHERE Country='Germany'
-ORDER BY City;
-
---Shippers.CompanyName bazýnda sipariþ sayýlarý
-SELECT Shippers.CompanyName,COUNT(Orders.OrderID) AS NumberOfOrders FROM Orders
-LEFT JOIN Shippers ON Orders.ShipVia = Shippers.ShipperID
-GROUP BY CompanyName;
-
--- Customers2'yi oluþtur, sonrasýnda
-INSERT INTO Customers2
-SELECT * FROM Customers
-
---truncate table Customers2
-
-select * from dbo.Customers2
-
--- Foreign key oluþturma.
-CREATE TABLE Orders (
-    OrderID int NOT NULL PRIMARY KEY,
-    OrderNumber int NOT NULL,
-    PersonID int FOREIGN KEY REFERENCES Persons(PersonID)
-);
-
--- FOREIGN KEY oluþturma:
-ALTER TABLE Orders
-ADD FOREIGN KEY (CustomerID) REFERENCES Customers(CustomerID);
--- CREATE TABLE
-CREATE TABLE Persons (
-    PersonID int IDENTITY(1,1) PRIMARY KEY,
-    LastName varchar(255) NOT NULL,
-    FirstName varchar(255),
-    Age int
-);
-
---CREATE INDEX Syntax
---Creates an index on a table. Duplicate values are allowed:
-/*
-CREATE INDEX index_name
-ON table_name (column1, column2, ...);*/
---CREATE UNIQUE INDEX Syntax
---Creates a unique index on a table. Duplicate values are not allowed:
-/*
-CREATE UNIQUE INDEX index_name
-ON table_name (column1, column2, ...);
-*/
-
---DROP INDEX table_name.index_name;
-
---C:\Program Files\Microsoft SQL Server\MSSQL15.SQLEXPRESS\MSSQL\Backup\
-
-
-
-set Concat_Null_Yields_Null on
-SELECT CompanyName, Address + ', ' + PostalCode + ' ' + City + ', ' + Country AS Address
-FROM Customers;
-set Concat_Null_Yields_Null off  -- ON Olunca NULL'lar geliyor.
-
-SELECT GetDate() 'GetDate',FORMAT(GetDate() , 'd', 'tr-TR') AS Turkce,
-FORMAT(GetDate() , 'd', 'en-US') AS Amerikan,
-FORMAT(GetDate() , 'd', 'en-gb') AS Ingiliz;
-
--- INNER JOIN
-SELECT Orders.OrderID, Customers.ContactName
-FROM Orders
-INNER JOIN Customers ON Orders.CustomerID = Customers.CustomerID;
 
 
 

@@ -36,6 +36,10 @@ FROM  SalesLT.Product p
 JOIN SalesLT.ProductCategory c  ON p.ProductCategoryID=c.ProductCategoryID
 GROUP BY c.Name;
 
+
+
+
+-->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 USE [Northwind];
 -- Her bir üründen kaç adet sipariþ verilmiþ?
 SELECT * FROM [Order Details];
@@ -74,5 +78,5 @@ select * from orders
 SELECT COUNT(CustomerID) AS OrdersFromCustomerID7 FROM Orders
 WHERE CustomerID='VINET'
 
-
+--<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 

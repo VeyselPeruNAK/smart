@@ -1,63 +1,56 @@
 
 https://drive.google.com/drive/folders/1IE5rY4qgZbrn85KLJ8PuyPg2HVl0DXzl?usp=sharing
 
+
 https://drive.google.com/drive/folders/1IE5rY4qgZbrn85KLJ8PuyPg2HVl0DXzl?usp=sharing
 https://learn.microsoft.com/en-us/sql/samples/adventureworks-install-configure?view=sql-server-ver16&tabs=ssms
 
 
-select * from production.product;
+select * from SalesLT.product;
 
-select ProductId, Name from production.product;
+select ProductId, Name from SalesLT.product;
 
-select Name Product_Name, * from production.product order by Name;
+select Name Product_Name, * from SalesLT.product order by Name;
 
 -- Distinct
-select count(*) from Person.Person  
-select distinct  FirstName from Person.Person
-select count(*) from Person.Person WHERE FirstName = 'Henry'
+select count(*) from SalesLT.product  
+select Color from SalesLT.product  
+select distinct  Color from SalesLT.product  
+select count(*) from SalesLT.product  WHERE Color='Red'
+select * from SalesLT.product  WHERE Color='Red'
+
 
 --Union ve Union all
-SELECT BusinessEntityID, ModifiedDate, SalesQuota
-FROM Sales.SalesPerson
-WHERE SalesQuota > 0
-UNION  ALL
-SELECT BusinessEntityID, ModifiedDate, SalesQuota
-FROM Sales.SalesPersonQuotaHistory
-WHERE SalesQuota > 0
+select [ProductID] from [SalesLT].[SalesOrderDetail]
+UNION ALL
+select [ProductID] FROM [SalesLT].[Product]
 
-select ProductId, Name
-from Production.Product
-WHERE ProductID = 2 AND Name='Bearing Ball'
+select *
+from SalesLT.product
+WHERE ProductID = 712 OR Name='LL Fork'
 
---AND
+--ANDlll
 select ProductId, Name
-from Production.Product
-WHERE ProductID = 2 AND Name='Bearing Ball' AND ProductNumber = 'BA-8327'
+from SalesLT.product
+WHERE Name='LL Fork' AND ProductID=802
 
---OR
-select ProductId, Name
-from Production.Product
-WHERE Name='Bearing Ball' OR Name = 'Blade' 
 
--- Buyuk harf OK.
-select ProductId, Name
-from Production.Product
-WHERE Name='Bearing Ball' OR Name = 'Blade' OR Name = 'CHAIN'
+
 
 -- 1=1
 select ProductId, Name
-from Production.Product
+from SalesLT.product
 WHERE ProductID < 5 OR 1=1
 
 --Karþýlaþtýrma Operatörleri 
 --< > =  <= >= != <> LIKE 
 
-select * from Production.Product WHERE ProductID < 5;
-select * from Production.Product WHERE ProductID > 5;
-select * from Production.Product WHERE ProductID = 4;
-select * from Production.Product WHERE ProductID <= 316;
-select * from Production.Product WHERE ProductID != 316;  -- 503 rows
-select * from Production.Product                          -- 504 rows
+select * from SalesLT.product WHERE ProductID < 5;
+select * from SalesLT.product WHERE ProductID > 5;
+select * from SalesLT.product WHERE ProductID = 4;
+select * from SalesLT.product WHERE ProductID <= 316;
+select * from SalesLT.product WHERE ProductID != 316;  -- 503 rows
+select * from SalesLT.product                          -- 504 rows
 
 -- LIKE ile sorgu pluþturabilmek için joker karakter kullanýlmalýdýr:
 -- % Birden fazla harf ve rakam
@@ -68,65 +61,66 @@ select * from Production.Product                          -- 504 rows
 
 
 
-select * from Production.Product WHERE Name LIKE '%ad%'   -- içinde ad geçen, büyük küçük harf farketmez.
-select * from Production.Product WHERE Name LIKE 'C%'   -- baþ harfi C
-select * from Production.Product WHERE Name LIKE 'BE%'   -- baþ harfi Be
-select * from Production.Product WHERE Name LIKE '%karm'   -- baþ harfi Be
-select * from Production.Product WHERE Name LIKE '%ha%'   -- içinde ha
-select * from Production.Product WHERE Name LIKE '_eflector'   -- 9 harfli sonu eflector.
-select * from Production.Product WHERE Name LIKE '[AC]%'   -- baþ harfi A yada C 
-select * from Production.Product WHERE Name LIKE '[A-C]%'   -- baþ harfi A yada B ya da C
-select * from Production.Product WHERE Name LIKE '[A-C][^l]%'   -- baþ harfi ABC olan, sonraki harfi h olmayan. 
-select * from Production.Product WHERE Name LIKE '%[%]%'   -- içinde % geçen
-select * from Production.Product WHERE Name LIKE '%/%'   -- içinde / geçen
-select * from Production.Product WHERE Name NOT LIKE 'BE%'   -- baþ harfi Be olmayan
+select * from SalesLT.product WHERE Name LIKE '%ad%'   -- içinde ad geçen, büyük küçük harf farketmez.
+select * from SalesLT.product WHERE Name LIKE 'C%'   -- baþ harfi C
+select * from SalesLT.product WHERE Name LIKE 'BE%'   -- baþ harfi Be
+select * from SalesLT.product WHERE Name LIKE '%karm'   -- baþ harfi Be
+select * from SalesLT.product WHERE Name LIKE '%ha%'   -- içinde ha
+select * from SalesLT.product WHERE Name LIKE '_eflector'   -- 9 harfli sonu eflector.
+select * from SalesLT.product WHERE Name LIKE '[AC]%'   -- baþ harfi A yada C 
+select * from SalesLT.product WHERE Name LIKE '[A-C]%'   -- baþ harfi A yada B ya da C
+select * from SalesLT.product WHERE Name LIKE '[A-C][^l]%'   -- baþ harfi ABC olan, sonraki harfi h olmayan. 
+select * from SalesLT.product WHERE Name LIKE '%[%]%'   -- içinde % geçen
+select * from SalesLT.product WHERE Name LIKE '%/%'   -- içinde / geçen
+select * from SalesLT.product WHERE Name NOT LIKE 'BE%'   -- baþ harfi Be olmayan
 
 -- Between AND
-select * from Production.Product WHERE ProductId Between 1 and 4 -- 1 ve 4 dahil. 
+select * from SalesLT.product WHERE ProductId Between 800 and 810 -- 800 ve 810 dahil. 
 
 -- IN NOT IN 
-select * from Production.Product WHERE ProductId IN (1,2,3,316) --
-select * from Production.Product WHERE Name IN ('Adjustable % Race','Bearing Ball','BB Ball Bearing','Blade')
-select * from Production.Product WHERE ProductId NOT IN (1,2,3,316) --Not in 
+select * from SalesLT.product WHERE ProductId IN (800,801,805) --
+select * from SalesLT.product WHERE ProductId NOT IN (800,801,805) --292 adet
 
 Set CONCAT_NULL_YIELDS_NULL ON;
-SELECT Name + COLOR + ProductNumber, *  FROM Production.Product WHERE(Name + COLOR + ProductNumber IS NOT NULL);
+SELECT Name + COLOR + ProductNumber, *  FROM SalesLT.product 
+WHERE(Name + COLOR + ProductNumber IS NOT NULL);
 Set CONCAT_NULL_YIELDS_NULL OFF;
-SELECT Name + COLOR + ProductNumber, *  FROM Production.Product WHERE(Name + COLOR + ProductNumber IS NOT NULL);
+SELECT Name + COLOR + ProductNumber, *  FROM SalesLT.product 
+WHERE(Name + COLOR + ProductNumber IS NOT NULL);
 
 -- IS NULL IS NOT NULL
-select * from Production.Product WHERE Size IS NOT NULL
+select * from SalesLT.product WHERE Size IS  NULL
 
 
 -- IsNull Fonksiyonu 
-select ISNULL(Size, 0) Size, ProductID 
-from Production.Product --WHERE Size IS NOT NULL
+select ISNULL(Size, 5) Size, ProductID 
+from SalesLT.Product WHERE Size IS  NULL
 
 select 
 AVG(Isnull(Weight, 10))
-from Production.Product
+from SalesLT.product
 
 -- ORDER BY 
 SElect ProductId, Name
-from Production.Product
+from SalesLT.product
 ORDER BY Name
 
 -- DESC ASC 1, 2
 SElect ProductId, Name
-from Production.Product
+from SalesLT.product
 ORDER BY 2 DESC 
 
 --
-SELECT ReorderPoint,Name 
-from Production.Product
-ORDER BY 1,2
+SELECT *
+from SalesLT.product
+ORDER BY 4,2 -- Order by Color, Name
 
 --TOP OPERATÖRÜ
-SELECT TOP 5 * FROM Production.Product
-ORDER BY 1,2
+SELECT TOP 5 * FROM SalesLT.product
+ORDER BY 4,2
 
 SELECT TOP 2 PERCENT * FROM SalesLT.Product
-ORDER BY 1,2
+ORDER BY 4,2  --  295'te 6 
 
 --Klasik Join -- INNER JOIN'le ayný.
 SElect SOD.ProductId, P.Name, SOD.*
@@ -156,22 +150,22 @@ WHERE SOD.ProductID IS NULL
 ORDER BY 1
 
 -- Tablo yaratýrken Primary Key oluþturma
-CREATE TABLE Urunler(
-UrunID INT,
+CREATE TABLE Urunler2(
+UrunID INT NOT NULL,
 UrunAd Varchar(200),
 UrunFiyat Money,
-CONSTRAINT PKC_UrunId PRIMARY KEY(UrunID)
+CONSTRAINT PKC_UrunId2  PRIMARY KEY (UrunID)
 );
 
 --Tabloyu oluþtur, PK'yý tanýmla.
-CREATE Table Kullanicilar(
+CREATE Table Kullanicilar2(
 KullaniciID INT NOT NULL,
 Ad varchar(50),
 Soyad varchar(50),
 KullaniciAd varchar(20)
 );
-ALTER TABLE Kullanicilar
-ADD Constraint PKC_KullaniciID Primary Key(KullaniciID);
+ALTER TABLE Kullanicilar2
+ADD Constraint PKC_KullaniciID2 Primary Key(KullaniciID);
 
 --Tabloyu oluþtur, Unique index tanýmla.
 CREATE TABLE Personeller
@@ -188,6 +182,23 @@ CREATE TABLE Personeller
  --Mevcut tabloya Unique constraint ekle.
  ALTER TABLE PERSONELLER
  ADD CONSTRAINT UQ_PersonelEmail UNIQUE (Email);
+
+ --use OKUL_VT
+ ALTER TABLE [tb_Ogrenci]
+ ADD CONSTRAINT [IX_tb_Ogrenci2] UNIQUE (ad);
+
+/*
+CREATE UNIQUE INDEX index_name
+ON table_name (column1, column2, ...);
+*/
+
+--DROP INDEX table_name.index_name;
+
+
+-- CREATE UNIQUE NONCLUSTERED INDEX [IX_tb_Ogrenci3] ON [dbo].[tb_Ogrenci]
+--(
+--	[ad] ASC
+--)
 
  -- DEFAULT Constraint.
  CREATE TABLE Personeller

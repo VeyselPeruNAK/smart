@@ -1,3 +1,28 @@
+CREATE VIEW vw_ogrenciler_adsoyad AS
+select ad, soyad from tb_ogrenci 
+
+select  * from vw_ogrenciler_adsoyad
+
+CREATE VIEW vw_ogrenciler AS
+SELECT o.ad, o.soyad,o.telefon,m.ad Ogretmen_ad, m.soyad Ogretmen_soyad,
+s.ad sinif_ad
+FROM tb_Ogrenci o INNER JOIN tb_ogretmen m
+ON o.ogretmenID = m.ID
+INNER JOIN tb_sinif s ON o.sinifID = s.ID
+
+select * from vw_ogrenciler 
+
+CREATE VIEW vw_ogrenciler_d101 AS
+SELECT o.ad, o.soyad,o.telefon,m.ad Ogretmen_ad, m.soyad Ogretmen_soyad,
+s.ad sinif_ad
+FROM tb_Ogrenci o INNER JOIN tb_ogretmen m
+ON o.ogretmenID = m.ID
+INNER JOIN tb_sinif s ON o.sinifID = s.ID
+WHERE s.ad = 'd101'
+
+select * from vw_ogrenciler_d101
+
+-----------------------------------------------------------------------
 
 --USE Northwind; -- Sorgu gönderilen veritabanýný Northwind yap.
 

@@ -9,7 +9,7 @@ SELECT * FROM tb_Ogretmen;
 --INSERT INTO tb_Ogrenci (ad,soyad,dogumYili,sinifID) 
 --VALUES ('Seyhan','KARACA',1995,2);
 
-INSERT INTO tb_Ogretmen (ad,soyad,telefon,alanID) VALUES('Aþýk','Veysel','03463211232',3);
+INSERT INTO tb_Ogretmen (ad,soyad,telefon,alan) VALUES('Aþýk','Veysel','03463211232',3);
 
 -- INNER JOIN/JOIN iki tabloda ON ile belirtilen kolonlar dolu ise 
 -- listeler.
@@ -18,7 +18,8 @@ SELECT tb_Ogrenci.ad,tb_Ogrenci.soyad,CONCAT(tb_Ogretmen.ad,' ',tb_Ogretmen.soya
 FROM tb_Ogrenci INNER JOIN tb_Ogretmen
 ON tb_Ogrenci.ogretmenID=tb_Ogretmen.ID;
 
-SELECT tb_Ogrenci.ad,tb_Ogrenci.soyad,CONCAT(tb_Ogretmen.ad,' ',tb_Ogretmen.soyad) as Öðretmen
+SELECT tb_Ogrenci.ad,tb_Ogrenci.soyad,
+CONCAT(tb_Ogretmen.ad,' ',tb_Ogretmen.soyad) as Öðretmen
 FROM tb_Ogrenci JOIN tb_Ogretmen
 ON tb_Ogrenci.ogretmenID=tb_Ogretmen.ID;
 
