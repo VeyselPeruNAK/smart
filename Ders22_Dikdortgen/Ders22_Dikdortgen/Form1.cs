@@ -19,12 +19,34 @@ namespace Ders22_Dikdortgen
 
         private void btnHesapla_Click(object sender, EventArgs e)
         {
-            int genislik = Convert.ToInt32(txtGenislik.Text);
-            int uzunluk = Convert.ToInt32(txtUzunluk.Text);
-            int alan = genislik * uzunluk;
-            int cevre = (genislik + uzunluk) * 2;
-            lblCevre.Text = "Çevre : " + cevre;
-            lblAlan.Text = "Alan : " + alan;
+            if (txtGenislik.Text == "" || txtUzunluk.Text == "")
+                return;
+
+            double genislik = Convert.ToDouble(txtGenislik.Text);
+            double uzunluk = Convert.ToDouble(txtUzunluk.Text);
+            double alan = genislik * uzunluk;
+            double cevre = 2 * (genislik + uzunluk);
+            lblCevre.Text = "Çevre:" + cevre.ToString("###.###,##");
+            lblAlan.Text = "Alan:" + alan.ToString("###.###,##");
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            txtGenislik.Text = "0";
+            txtUzunluk.Text = "0";
+        }
+
+        private void Hesapla(object sender, EventArgs e)
+        {
+            if (txtGenislik.Text == "" || txtUzunluk.Text == "")
+                return;
+
+            double genislik = Convert.ToDouble(txtGenislik.Text);
+            double uzunluk = Convert.ToDouble(txtUzunluk.Text);
+            double alan = genislik * uzunluk;
+            double cevre = 2 * (genislik + uzunluk);
+            lblCevre.Text = "Çevre:" + cevre.ToString("###.###,##");
+            lblAlan.Text = "Alan:" + alan.ToString("###.###,##");
         }
     }
 }

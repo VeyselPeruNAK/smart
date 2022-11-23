@@ -99,7 +99,7 @@ GROUP by Title
 select SalesPerson, Title, count(*) from [SalesLT].[Customer]
 GROUP by SalesPerson, Title 
 ---------------------------------------------------------------------------------
---Sýnýflarýna öðrenci sayýlarý:
+--Sýnýflarýn öðrenci sayýlarý:
 select s.ad, count(*) 
 from tb_ogrenci o INNER JOIN tb_sinif s
 ON o.sinifID = s.ID
@@ -133,7 +133,7 @@ FROM SalesLT.Customer
 GROUP BY FirstName
 ORDER BY COUNT(CustomerID) DESC;
 
---lists the number of orders sent by each shippe
+--lists the number of orders sent by each customer
 SELECT CustomerID, COUNT(*) AS NumberOfOrderDetail
 FROM [SalesLT].[SalesOrderDetail] SOD INNER JOIN [SalesLT].SalesOrderHeader SOH
 ON SOD.SalesOrderID = SOH.SalesOrderID

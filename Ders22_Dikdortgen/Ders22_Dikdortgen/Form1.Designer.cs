@@ -44,6 +44,7 @@ namespace Ders22_Dikdortgen
             this.txtUzunluk.Name = "txtUzunluk";
             this.txtUzunluk.Size = new System.Drawing.Size(100, 23);
             this.txtUzunluk.TabIndex = 0;
+            this.txtUzunluk.TextChanged += new System.EventHandler(this.Hesapla);
             // 
             // txtGenislik
             // 
@@ -51,6 +52,7 @@ namespace Ders22_Dikdortgen
             this.txtGenislik.Name = "txtGenislik";
             this.txtGenislik.Size = new System.Drawing.Size(100, 23);
             this.txtGenislik.TabIndex = 1;
+            this.txtGenislik.TextChanged += new System.EventHandler(this.Hesapla);
             // 
             // label1
             // 
@@ -116,6 +118,7 @@ namespace Ders22_Dikdortgen
             this.Controls.Add(this.txtUzunluk);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
